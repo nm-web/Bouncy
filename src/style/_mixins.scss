@@ -1,0 +1,10 @@
+@mixin btn_style($color) {
+  background: transparent;
+  border: 1px solid $color;
+  border-radius: 1.25em;
+  padding: 0.625em;
+  cursor: pointer;
+  color: $color;
+  width: 8.75em;
+  text-align: center;
+}

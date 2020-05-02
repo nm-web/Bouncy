@@ -1,0 +1,118 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "colors";
+@import "header";
+@import "about";
+@import "tabs-block";
+@import "projects";
+@import "services";
+@import "team-qutes";
+@import "portfolio";
+@import "team";
+@import "testimonials";
+@import "latest-news";
+@import "price";
+@import "subscribe";
+@import "contacts";
+@import "footer";
+
+
+:root {
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Open Sans', 'Source Sans Pro', sans-serif;
+}
+
+img {
+
+  object-fit: cover;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $color-white;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.bg_full {
+  width: 100%;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 4px;
+
+}
+
+.text_green {
+  color:$color-green;
+  font-weight: 700;
+}
+
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25em;
+  color: $text-h4;
+  //margin-bottom: 1.25em;
+}
+
+.color-text {
+  color: $color-green;
+}
+
+.indent {
+  padding-left: 8.33%;
+  padding-right: 8.33%;
+}
+
+.section_top {
+  padding-top: 5em;
+}
+
+p {
+  line-height: 1.75;
+}
+
+.arrow-up {
+  left: calc(100% - 3em);
+  top:90%;
+  position: fixed;
+  z-index: 10;
+
+  & .arrow {
+    transform: rotate(225deg);
+    top: calc(50% - 5px);
+
+  }
+}
+
+.section-title {
+  margin-bottom: 4.375em;
+  text-align: center;
+}
+@media (max-width: 48em) {
+  h1,h2,h3,p {
+    line-height: 1.3;
+  }
+}

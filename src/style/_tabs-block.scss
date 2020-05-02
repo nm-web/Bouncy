@@ -1,0 +1,42 @@
+@import "colors";
+.tabs__item {
+  width: 3.44em;
+  height: 3.44em;
+  text-align: center;
+  padding-top: 0.625em;
+  line-height: 2;
+  background: $text-color;
+  border-radius: 50%;
+  cursor: pointer;
+
+  & img{
+    width: 2em;
+    height: 2em;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+}
+.tabs-about__item:not(:first-child) {
+  margin-left: 1.5em;
+}
+
+.tabs_active{
+  color:#fff;
+  background: $color-green;
+
+}
+
+.tabs-content {
+  &__item {
+    display: none;
+  }
+  margin-top: 3.875em;
+  padding-bottom: 6.25em;
+  &__title {
+    margin-bottom: 2.1em;
+  }
+  &_active{
+    display: flex;
+  }
+}

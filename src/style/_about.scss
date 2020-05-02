@@ -1,0 +1,58 @@
+@import "colors";
+@import "mixins";
+
+.content__title {
+  font-size: 1.25rem;
+}
+
+.about {
+  margin-bottom: 6.25em;
+}
+.content__text {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2;
+  font-size: 0.875em;
+  color: $text-color_light;
+}
+.article_bottom {
+
+  @media (max-width: 48em) {
+    margin: 0;
+
+  }
+}
+
+.text_top-bottom {
+  margin-top: 3.57em;
+  margin-bottom: 2.71em;
+}
+
+.about__img {
+  width: 12.5em;
+  margin-top: -1.5em;
+  @media (max-width: 48em) {
+    max-width: 13.5em;
+    margin: 0 auto;
+
+  }
+}
+
+.read-btn {
+  @include btn_style($text-color_dark);
+  //padding: 0.625em 2em;
+  margin-bottom: 2em;
+}
+
+.bg_grey {
+  background-color: $bg-color;
+}
+
+
+
+.section-title {
+  margin-bottom: 3em;
+  & h2{
+    margin-bottom: 2em;
+  }
+}
+

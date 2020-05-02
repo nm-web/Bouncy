@@ -1,0 +1,163 @@
+@import "colors";
+
+
+.team-slider-container {
+  margin-bottom: 6.25em;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.team-slider-container .team-slaid-pagination{
+  position: static;
+  text-align: center;
+  margin-top: 3.5em;
+
+}
+
+.team-slider-container .swiper-pagination-bullet,
+.testimonials-slaid-container .swiper-pagination-bullet {
+  border-radius: 50%;
+  border: 1px solid #25c09f;
+  width: 10px;
+  height: 10px;
+  background-color: $color-white;
+}
+
+.team-slider-container .swiper-pagination-bullet-active,
+.testimonials-slaid-container .swiper-pagination-bullet-active{
+  background-color: $color-green;
+}
+
+.team-slider-container .swiper-slide {
+  display: flex;
+  align-items: center;
+}
+
+.team-photo {
+  position: relative;
+  //max-width: 17.75em;
+  //width: 100%;
+  & >img {
+    width: 100%;
+  }
+}
+
+
+.team-slider__text {
+  text-align: right;
+  font-size: 0.875rem;
+  color:#81868e;
+}
+
+.team-slider__text h4 {
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.team-slider__text h4:before {
+  position: absolute;
+  left: 110%;
+  top: 5px;
+  content: '';
+  width: 4px;
+  height: 42px;
+  background-color: $color-green;
+}
+
+.linebar-container {
+  margin: 2em 0;
+  padding-left: 10px;
+  width: 97%;
+  height: 10px;
+  position: relative;
+  padding-top: 1em;
+}
+
+.titlebar {
+  text-align: left;
+  text-transform: uppercase;
+
+}
+
+.team-photo .team-photo_after {
+  position: absolute;
+  margin: 0;
+  top: 2.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+  background: rgba(255, 255, 255, .6);
+  display: none;
+z-index: 4;
+}
+
+.team-photo:hover .team-photo_after {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.team-photo_after li  {
+  //position: absolute;
+  //top: 50%;
+  //left:5%;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #2a263d;
+  border-radius: 50%;
+  padding: 0.5em;
+  background-color: #2a263d;
+  z-index: 5;
+}
+
+.team-photo_after .icon-fac {
+
+  padding:0 0.2em;
+}
+
+
+.team-footer {
+  background: url("/static/img/team-footer.png");
+
+  height: 12.25em;
+  //margin: 0;
+}
+
+.team-footer h4 {
+  color: $color-white;
+  text-align: center;
+  margin: 3.43em auto 0 auto;
+}
+
+.team-footer_btn {
+  @include btn_style($color-white);
+  width: 8.87em;
+
+  display: block;
+  margin: 2em auto 0;
+}
+
+@media (max-width: 48em) {
+  .team-slider-container .swiper-slide {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .team-slider__text {
+    text-align: center;
+    margin-left: auto;
+
+  }
+
+  .team-photo {
+    text-align: center;
+    margin-left: 18%;
+  }
+
+  .team-slider__text h4:before {
+    left: 99%;
+  }
+}
+

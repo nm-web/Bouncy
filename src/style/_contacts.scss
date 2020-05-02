@@ -1,0 +1,46 @@
+.contacts {
+  padding-bottom: 6.25em;
+}
+
+.contacts__photo {
+  position: relative;
+
+  & img:first-child {
+    width: 100%;
+  }
+}
+
+.contacts__icon {
+  position: absolute;
+  top: calc(50% - 1.3em);
+  left: calc(50% - 2.1em);
+}
+
+.icon_big {
+  top: calc(50% - 1.56em);
+}
+
+.contacts__text {
+  margin: 1.625em 0;
+  width: 100%;
+  text-transform: uppercase;
+
+  & h4 {
+    font-size: 1rem;
+    color: rgb(70, 70, 70);
+    margin-bottom: 1.625em;
+    line-height: 1.25;
+  }
+
+  & p {
+    font-size: 0.875rem;
+    color: rgb(129, 134, 142);
+    line-height: 1.429;
+
+  }
+}
+
+.contacts-card {
+  background: #ffffff;
+  padding: 0;
+}

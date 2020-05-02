@@ -1,0 +1,72 @@
+
+
+.services {
+  padding-bottom: 9.25em;
+  //padding-bottom: 9.25em;
+}
+
+
+
+
+
+.services-tabs-text {
+  //margin-left: -15px;
+  //width: 97%;
+}
+.services-tabs-text h4 {
+  margin-bottom: 1em;
+}
+
+.services-tabs-text p:nth-child(even) {
+  margin-bottom: 2.85em;
+}
+
+
+.progressbar-wrapper {
+  @media (max-width: 36em) {
+    font-size: 0.8rem;
+  }
+}
+
+.circle-container {
+  width: 6.25em;
+  height: 6.25em;
+}
+
+.progress-text {
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  font-weight: 400;
+
+}
+.progressbar-one {
+  margin-right: 1em;
+}
+.progressbar-one span{
+  margin-top: 1em;
+  text-align: center;
+  color: $text-color;
+}
+
+.services-tabs{
+
+  &__item{
+    margin-bottom: 1.5em;
+  }
+
+  &__content {
+    display: none;
+  }
+  //margin-top: 3.875em;
+
+  &__title {
+    //margin-bottom: 2.1em;
+  }
+  & .tabs-content_active{
+    display: block;
+    //@media screen and (max-width: 60em){
+    //  flex-direction: column;
+    //}
+    //align-items: center;
+  }
+}
